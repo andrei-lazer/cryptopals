@@ -1,0 +1,15 @@
+
+CC = gcc
+
+c3: c3.o helpers.o
+	${CC} c3.o helpers.o -lm -o c3 
+
+helpers.o: helpers.c helpers.h
+	${CC} -c helpers.c
+
+c3.o: c3.c 
+	${CC} -c c3.c
+
+
+clean:
+	rm *.o c3
