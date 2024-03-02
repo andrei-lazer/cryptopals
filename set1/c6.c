@@ -48,6 +48,9 @@ int find_keysize(const char* text, int start, int end, int len) {
 
 char* solve_XOR_cipher(FILE* file) {
 
+	char* key;
+
+	return key;
 }
 
 int main() {
