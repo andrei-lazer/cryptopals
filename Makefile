@@ -1,14 +1,14 @@
 CC = gcc
 
-c4: c4.o helpers.o
-	${CC} c4.o helpers.o -lm -o c4 
+c6: c6.o helpers.o
+	${CC} c6.o helpers.o -lm -o c6 
 
 helpers.o: helpers.c helpers.h
 	${CC} -c helpers.c
 
-c4.o: c4.c 
-	${CC} -c c4.c
+c6.o: c6.c 
+	${CC} -c c6.c
 
 
 clean:
-	rm *.o c4
+	rm *.o c6
